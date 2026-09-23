@@ -187,22 +187,6 @@ df = df.sort_values("date")
 
 Sorts the DataFrame according to the `date` column.
 
-### Purpose
-
-Stock data is time-series data, so arranging records chronologically is
-important before performing time-based calculations.
-
-------------------------------------------------------------------------
-
-# Stock Price Visualization
-
-``` python
-plt.figure(figsize=(10,5))
-plt.plot(df.date, df["open"], label="open")
-plt.plot(df.date, df["high"], label="high")
-plt.plot(df.date, df["low"], label="low")
-plt.plot(df.date, df["close"], label="close")
-```
 
 ### Explanation
 
